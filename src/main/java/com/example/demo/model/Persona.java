@@ -21,4 +21,9 @@ public class Persona {
     private Long id_tabla;
     private String nombre;
     private String apellidos;
+
+    public Persona(String nombre, String apellidos) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+    }
 }

@@ -17,4 +17,11 @@ public class PersonaService implements IPersonaService {
     public List<Persona> listarPersonas() {
         return personaRepository.findAll();
     }
+
+    @Override
+    public Persona crearPersona(String nombre, String apellidos) {
+        return personaRepository.save(new Persona(nombre, apellidos));
+    }
+
+
 }
